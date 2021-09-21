@@ -1,14 +1,6 @@
-// App.js -> theme for styled components
-const theme = {
-  mainColors: {
-    blue: '#2400ff',
-    gray: '#c6c6c6',
-    dark: '#353535',
-  },
-};
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
-
-// Navs.styled.js
 export const NavList = styled.ul`
   display: flex;
   justify-content: center;
@@ -47,22 +39,3 @@ export const LinkStyled = styled(Link)`
     }
   }
 `;
-
-// Title.styled.js
-export const TitleWrapper = styled.div`
-  text-align: center;
-  margin: 0 0 40px;
-
-  h1 {
-    color: ${({ theme }) => theme.mainColors.blue};
-    letter-spacing: 10px;
-    text-transform: uppercase;
-    margin: 0 0 10px;
-  }
-
-  p {
-    color: ${({ theme }) => theme.mainColors.dark};
-    margin: 0;
-  }
-`;
-
