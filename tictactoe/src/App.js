@@ -41,7 +41,7 @@ const App = () => {
   };
 
   const onNewGame = () => {
-    setHistory([NEW_GAME]);
+    setHistory(NEW_GAME);
     setCurrentMove(0);
   };
 
